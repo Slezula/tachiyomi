@@ -151,6 +151,11 @@ class Mintmanga : ParsedHttpSource() {
     *  on http://mintmanga.com/search/advanced
     */
     override fun getFilterList() = FilterList(
+            Genre("сингл", "s_single"),
+            Genre("завершенная", "s_completed"),
+            Genre("переведено", "s_translated"),
+            Genre("длинная", "s_many_chapters"),
+            Genre("без глав", "s_wait_upload"),
             Genre("арт", "el_2220"),
             Genre("бара", "el_1353"),
             Genre("боевик", "el_1346"),
